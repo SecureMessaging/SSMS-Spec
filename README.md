@@ -25,9 +25,11 @@ Assuming we have an encrypted Messenger app that runs on mobile devices(Apple/An
     * DNS Hijacking to direct users to another site that leaks their encryption keys.
     * Hacking or coercing Google Play or Itunes to release modified software versions.
  * Social Engineering
-   * Forcing Users to give up their encryption keys.
+   * Forcing/Tricking Users to give up their encryption keys.
    * Forcing Maintainers to implement backdoors into the software.
 
-While these are not *all* the attack vectors, these are the ones that will cause a mass leak of for all users of the application. This document focuses on preventing the possibility of these category of attacks. To handle these attacks the scope of trust needs to first brought down to the user and the software maintainers.
+While these are not *all* the possible attack vectors, these are the ones that will prove fatal to the privacy of the application users. This document focuses on preventing the possibility of these category of attacks.
 
-As it stands, we are forced to trust 3rd parties when delivering software. For example, we must trust that we will always have complete control over a domain; that the DNS provider doesn't hand over the domain name to somebody or that they get hacked. We trust Google and Itunes that our software isn't getting tampered with while it's in their online stores. We have to trust that our servers are not going to be compromised by the hosting provider. We must trust SSL Certificate Authorities with our communication streams.
+This document is split into 2 other specs:
+ * [Application Signing Spec](application-signing/overview.md)
+ * [Secure Messaging application(SSMS) Spec](ssms/overview.md)

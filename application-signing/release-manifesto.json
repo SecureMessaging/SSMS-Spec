@@ -1,0 +1,51 @@
+{
+    "name": "SSMS",
+    "version": "1.0.10",
+    "files": [
+        {
+            "name": "./app.main.js",
+            "hash": "CA978112CA1BBDCAFAC231B39A23DC4DA786EFF8147C4E72B9807785AFEE48BB"
+        },
+        {
+            "name": "./app.lib.js",
+            "hash": "3E23E8160039594A33894F6564E1B1348BBD7A0088D42C4ACB73EEAED59C009D"
+        },
+        {
+            "name": "./app.styles.css",
+            "hash": "2E7D2C03A9507AE265ECF5B5356885A53393A2029D241394997265A1A25AEFC6"
+        }
+    ],
+    "release-type": {
+        "rollback": false,
+        "release": true,
+        "add-signer": false,
+        "remove-signer": false,
+        "update-signing-rules": false
+    },
+    "signers": [
+        {
+            "name": "Evan Hurd",
+            "email": "hurdevan@gmail.com",
+            "publickey": "--2E7D2C03A9507AE265ECF5B5356885A53393A2029D241394997265A1A25AEFC6--",
+            "type": "developer"
+        },
+        {
+            "name": "Evan Hurd",
+            "email": "hurdevan@gmail.com",
+            "publickey": "--2E7D2C03A9507AE265ECF5B5356885A53393A2029D241394997265A1A25AEFC6--",
+            "type": "developer"
+        }
+    ],
+    "signing-rules": {
+        "signatures-needed-release": 2,
+        "signatures-needed-to-rollback": 2,
+        "signatures-needed-to-remove-signer": 2,
+        "signatures-needed-to-add-signer": 2
+    },
+    "signatures": [
+        {
+            "name" : "Evan Hurd",
+            "signature": "1FC74B4F01428F538512A7634B3D89B10083CBF5F57E69567A73108AFAD30E8E"
+        }
+    ]
+}
