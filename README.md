@@ -1,35 +1,19 @@
 # SSMS-Spec
 ## Overview
-This document describes phase I of the Simply Secure Messaging System, or SSMS. The main purpose of SSMS is to provide simple encrypted messaging that is just as easy to use as Facebook Messenger, while at the same time, providing complete security of the data and application.
+This document outlines the research and development of Secure Messaging and Authenticated Key Exchanges, otherwise know as SMAKE. The main goals outlined in this document is this:
+ * Friendly and Encrypted Messaging Application(SSMS)
+ * Secure Password Authenticated Key Exchanges(HR-PAKE)
+ * Application and Development Security(EUARA, "End-User Application Release Authentication)
 
-Data security goals are:
- * Long term encryption protection against large agencies and governments.
- * End-to-End Encryption
- * Forward Security
+The development of this application is split in into three phases, where each phase focuses on critical area of research. Each phase does not have to necessarily build off the preceding phase, but will probably be written as research and code matures.
 
-Application security goals are:
- * Protection against DNS Hijacking
- * Protection against malicious version releases
- * Protection against Man-in-the-Middle Attacks.
+Each of the three phrases are split into their own spec document, as outline below.
 
-Phase I focuses primarily on Application security. This is because the encryption methods we have today are really strong when implemented correctly and they are not likely cracked by even large government agencies. A more realistic attack avenue is on the software and the software maintainers. This XKCD comic is most relevant to this.
+## Phase 1 - [Research and Development of EUARA](phase-1/overview.md)
+The vast majority of phase 1 will focus on development a framework that can release and authenticate signed code to multiple environments, such as the browser, mobile and desktop application. Releases will be signed not by a single signer, but board of signers who's job is to protect the integrity of each release. A minimalist messaging application will written for testing purposes. The messaging application will be rewritten in Phase 3. The spec for Phase 1 can be found [here](phase-1/overview.md).
 
-![XKCD](https://imgs.xkcd.com/comics/security.png)
+## Phase 2 - [Research and Development of a PAKE protocol and Message Encryption](phase-2/overview.md)
+Phase 2 focuses on getting the encryption done right. These days encryption algorithms are far to strong even from the largest of government agencies but, only if the encryption algorithms are implemented correctly. In addition to encryption, Phase 2 will develop and implement a Password Authenticated Key Exchange(PAKE) and a Public Key Infrastructure(PKI). These two systems will allow for the secure transfer of public keys. The spec for Phase 2 can be found [here](phase-2/overview.md).
 
-Assuming we have an encrypted Messenger app that runs on mobile devices(Apple/Android) and as a Web Application, then aside from cracking the encryption, there are only a few ways to get the unencrypted data. This document groups these attacks into three categorizes: Software Attacks, Infrastructure Attacks and Social Engineering.
-
- * Attacks on Software
-   * Embedding hidden backdoors that leak encrypted data.
- * Attacks on Infrastructure
-    * Hacking servers to release modified software versions.
-    * DNS Hijacking to direct users to another site that leaks their encryption keys.
-    * Hacking or coercing Google Play or Itunes to release modified software versions.
- * Social Engineering
-   * Forcing/Tricking Users to give up their encryption keys.
-   * Forcing Maintainers to implement backdoors into the software.
-
-While these are not *all* the possible attack vectors, these are the ones that will prove fatal to the privacy of the application users. This document focuses on preventing the possibility of these category of attacks.
-
-This document is split into 2 other specs:
- * [Application Signing Spec](application-signing/overview.md)
- * [Secure Messaging application(SSMS) Spec](ssms/overview.md)
+## Phase 3 - [Feature Enhancement of the Messaging Application(SSMS)](phase-2/overview.md)
+Phase 3 will focus on maturing and enhancing the messaging application. The goal is to refine the code and produce a messaging application that is as feature rich and user friendly as other popular applications such as, Facebook Messenger and Google Talk. The spec for Phase 3 can be found [here](phase-3/overview.md).
