@@ -10,10 +10,10 @@ Phase 1 focuses primarily on Application security. This is because the encryptio
 Assuming we have an encrypted Messenger app that runs on mobile devices(Apple/Android) and as a Web Application, then aside from cracking the encryption, there are only a few ways to get the unencrypted data. This document groups these attacks into three categorizes: Software Attacks, Infrastructure Attacks and Social Engineering.
 
  * Attacks on Software
-   * Embedding hidden backdoors that leak encrypted data.
+   * Embedding hidden backdoors into dependencies that leaks secrets
  * Attacks on Infrastructure
     * Hacking servers to release modified software versions.
-    * DNS Hijacking to direct users to another site that leaks their encryption keys.
+    * DNS Hijacking to direct users to another site that leaks secrets.
     * Hacking or coercing Google Play or Itunes to release modified software versions.
  * Social Engineering
    * Forcing/Tricking Users to give up their encryption keys.
